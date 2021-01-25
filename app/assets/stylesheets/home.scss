@@ -1,0 +1,44 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#home {
+	margin-top: 0;
+	#home1 {
+		height: 100vh;
+		width: 100%;
+		position: relative;
+		color: white;
+		background: url(https://lococo.s3.amazonaws.com/latteart2.jpg) 
+		no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;;
+		text-align: center;
+		display: flex;
+ 		align-items: center;
+		img {
+			max-width: 50%;
+			margin: 200px auto;
+		}
+		#menubar {
+			background-color: rgba(250,250,250,.7);
+			margin: 0 auto;
+			padding: 20px;
+			color: black; 
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+		}
+	}
+	#home2 {
+		color: black;
+		#breakfast, #lunch, #dinner {
+			height: 500px;
+			width: 100%;
+			display: block;
+		}
+	}
+}
