@@ -1,18 +1,92 @@
-html {
-	min-height: 100%;
-}
 html,  body {
 	height: 100%;
   width: 100%;
   margin: 0;
 }
+$greymenu: #818181;
+$hovermenu: #f1f1f1;
+#home1 {
+	 span img {
+     height: 50px;
+     position: absolute;
+     top: 20px;
+     right: 50px;
+     cursor: pointer;
+   }
+	.container-fluid {
+		padding-left: 0; 
+		padding-right: 0;
+ 		overflow-y: hidden;
+ 		display: block;
+	}
+	  .sidenav {
+    height: 100%;
+    width: 450px; 
+    position: fixed; 
+    z-index: 2;
+    top: 0;
+    right: -450px;
+    background-color: white; 
+    // box-shadow: 0px 5px 50px -1px rgba(0,0,0,1);
+    overflow-x: hidden;
+    padding: 50px 0;
+    transition: 0.5s; 
+    #menu_info {
+      width: 200px;
+      // height: 120px;
+      padding: 10px;
+      margin-top: -20px;
+    }
+    .links {
+      text-align: center;
+      height: 100%;
+      a {
+        padding: 20px;
+        text-decoration: none;
+        font-size: 25px;
+        color: $greymenu;
+        display: block;
+        transition: 0.3s;
+        margin: 0 auto;
+        &:hover {
+          color: $hovermenu;
+        }
+      }
+    }
+   
+    p {
+      display: block;
+      width: 100%;
+      // margin: 5px auto;
+    }
 
-.container-fluid {
-	padding-left: 0;
-	padding-right: 0;
-  overflow-y: hidden;
-  display: block;
+    .closebtn {
+      font-size: 20px;
+      position: absolute;
+      top: 19px;
+      right: 59px;
+      color: $greymenu;
+    }
+  }
+  .developer {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 40px 56px;
+    p {
+      font-size: 12px;
+      width: 150px;
+      margin: 0;
+    }
+  }
 }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 50px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
 
 h1 {
 	margin: 0 auto;
@@ -22,14 +96,14 @@ h1 {
 	color: black;
 }
 p,h1, h2, h3, h4, h5, h6, a, li, label, input {
-font-family: 'Abel', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 text-decoration-line: none;
 text-decoration: none;
-
+color: black;
 }
 
 .background {
-	background-color: rgba(255,255,255,.95);
+	background-color: rgba(29,21,21,.65);
 	padding: 50px;
 	margin-left: 0;
 	margin-right: 0;

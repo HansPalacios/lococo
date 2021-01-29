@@ -4,23 +4,51 @@
 <div class="container-fluid" id="home">
 	<div class="col-md-12 col-sm-12 col-xs-12 no-gutters full-height" id="home1">
 		<div class="row">
-			 <%= image_tag("https://lococo.s3.amazonaws.com/Avenir4.png") %>
+			<%= link_to root_path do %>
+				<%= image_tag "https://lococo.s3.amazonaws.com/Avenir4.png", {id: "logo"} %>
+			<% end %>
+			<span onclick="openNav()">
+				<%=image_tag image_url("https://lococo.s3.amazonaws.com/hamburgermenu.png") %>
+			</span>
 			 <div id="menubar">
 			 		<h3>Menu</h3>
 			 </div>
+			 	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+	  <div class="col-md-5 col-sm-6 col-xs-12" >
+		  <div class="row" id="menu_info">
+		  	<p>Local Coffee Company</p>
+		  	<p>236 Stagg st</p>
+		  	<p> Brooklyn, NY, 11206</p>
+		  	<p>@lococobk</p>
+		  	<!-- <p>212-454-4545</p> -->
+		  </div>
+		</div>
+		<div class="col-md-7 col-sm-6 col-xs-12 links">
+			<a href="/">Home</a>
+		  <a href="/abouts">About</a>
+		  <a href="/galleries">Gallery</a>
+		  <!-- <a href="/stores">Store</a> -->
+		  <a href="/contact">Contact</a>
+		</div>
+		<div class="col-md-12 developer">
+			<p>Website by</p>
+			<p>Hans Palacios</p>
+		</div>
+	</div>
 		</div>
 	</div>
 	<div class="col-md-12 col-sm-12 col-xs-12 no-gutters " id="home2">
-		<div class="row" id="breakfast">
-
+		<div class="row menu" id="breakfast">
+			<%=image_tag image_url("https://lococo.s3.amazonaws.com/menuedit1.png") %>
 		</div>
 		<hr>
-		<div class="row" id="lunch">
-
+		<div class="row menu" id="lunch">
+			<%=image_tag image_url("https://lococo.s3.amazonaws.com/Asset+2.png") %>
 		</div>	
 		<hr>
-		<div class="row" id="coffee">
-
+		<div class="row menu" id="coffee">
+			<%=image_tag image_url("https://lococo.s3.amazonaws.com/Asset+1.png") %>
 		</div>
 	</div>
 </div>
